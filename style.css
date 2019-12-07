@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 body {
   margin: 0;
   font-family: "Euclid Circular A";
   background: linear-gradient(180deg, #41796b 0%, #23594c 53%, #013f33 100%);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lexend Mega", sans-serif;
   color: white;
   width: 100%;
 }
@@ -202,17 +202,17 @@ body {
   }
 
   .texto-mc {
-    font-size: 19px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 0px;
     width: 17em;
-    word-spacing: .2em;
   }
 
   .h1-nosotros {
     margin: .5em;
     border-bottom: 2px solid #013f33;
+    font-size: 24px;
   }
 
 
@@ -253,7 +253,7 @@ body {
     font-size: 16px;
     padding: 26px;
     margin: 0px;
-    width: 250px;
+    width: 300px;
   }
 
   .carousel-inner {
@@ -316,16 +316,13 @@ body {
   }
 
   #whatsapp-card {
-    height: 12em;
+    height: 14em;
   }
 
   .sonic {
     width: 60px;
   }
 
-  .card h3 {
-    border-bottom: 2px solid #013f33;
-  }
 
   .red-social img {
     width: 10em;
@@ -333,7 +330,7 @@ body {
   }
 
   .texto-contacto {
-    font-size: 17px;
+    font-size: 15px;
     width: 14em;
   }
 
@@ -447,10 +444,10 @@ body {
     background-color: #013f33;
     transition: background-color 0.3s;
     border: 2px solid #ffffff;
-    box-shadow: inset 0px 0px 15px 0px #013f33;
-    padding: 4px 37px;
+    box-shadow: 0px 0px 14px 7px #013f33;
+    padding: 10px;
     border-radius: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lexend Mega", sans-serif;
     color: white;
     font-weight: bold;
     width: 224px;
@@ -622,7 +619,7 @@ body {
     border: 4px solid #013f33;
     padding: 4px 21px;
     border-radius: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: "Lexend Mega", sans-serif;
     color: white;
     z-index: 6;
     height: 78px;
@@ -844,7 +841,7 @@ body {
 
   .anclas-ft {
     text-decoration: underline;
-    text-decoration-color: #013f33;
+    text-decoration-color: #41796b;
     text-underline-offset: 5px;
     color: #f9f9f9;
     font-size: 15px;
@@ -888,6 +885,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .parrafo-ft {
