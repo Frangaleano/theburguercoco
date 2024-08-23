@@ -116,7 +116,7 @@ function toggleMenuSection() {
 
         tituloMenu.style.backgroundColor = "transparent";
         tituloMenu.style.animation = "shadowAnimation 2s infinite"
-        tituloMenu.style.color = "#26B884"
+        tituloMenu.style.color = "white"
         parrafoMenu.style.display = "block"
     }
 }
@@ -143,30 +143,32 @@ function toggleSubMenu() {
         const buttonsHTML = `
         <div class="div-botones-submenu" data-button-number="1">
             <div class="div-producto">
+            <div class="div-img-prod">
                 <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
-
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(1, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(1, 'increment')">+</button>
+                </div>
+            </div>
                 <div class="div-parrafos">
                     
                 <button class="menu-button sub-menu-button" data-button-number="1">Classic Power</button>
                 <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
 
                     <div class="div-detalles">
+
                         <div class="div-input">
-                        <p>Simple $5700</p>
-                        <input class="radio-button" type="radio" name="Classic power simple" value="5700">
-                        </div>
-                        <div class="div-input">
-                        <p>Doble <br>$7200</p>
-                        <input class="radio-button" type="radio" name="Classic power doble" value="7200">
-                        </div>
-                        <div class="div-input">
-                        <p>Triple <br>$8500</p>
-                        <input class="radio-button" type="radio" name="Classic power triple" value="8500">
-                        </div>
-                        <div class="div-input">
-                        <button class="counter-button" onclick="updateCounter(1, 'decrement')">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-button" onclick="updateCounter(1, 'increment')">+</button>
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
                         </div>
                     </div>
                 </div>   
@@ -179,24 +181,37 @@ function toggleSubMenu() {
 
         <div class="div-botones-submenu" data-button-number="2">
             <div class="div-producto">
-                <img class="img-productos" src="./miñon-item.webp" alt="miñon">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Cuarto de libra">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(2, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(2, 'increment')">+</button>
+                </div>
+            </div>
                 <div class="div-parrafos">
-                    <button class="sub-menu-button" data-button-number="2">Miñon</button>
-                    <p id="parrafos-detalles">Pan especial para restaurant y viandas</p>
+                    
+                <button class="menu-button sub-menu-button" data-button-number="2">Cuarto de libra</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
                     <div class="div-detalles">
-                        <p>$8000 <br> $1600 x Kg</p>
-                        <input class="radio-button" type="radio" name="miñon" value="8000">
-                        <p>$8000 <br> $1600 x Kg</p>
-                        <input class="radio-button" type="radio" name="miñon" value="8000">
-                        <p>$8000 <br> $1600 x Kg</p>
-                        <input class="radio-button" type="radio" name="miñon" value="8000">
-                        <button class="counter-button" onclick="updateCounter(2, 'decrement')">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-button" onclick="updateCounter(2, 'increment')">+</button>
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Cuarto de libra simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Cuarto de libra doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Cuarto de libra triple" value="8500">
+                            
+                            
+                        </div>
                     </div>
                 </div>   
             </div>    
-                       
+
             <div class="div-boton-agregar">
                 <button class="boton-agregar" onclick="agregarAlPedido(2)">Agregar al pedido</button>
             </div>
@@ -204,23 +219,37 @@ function toggleSubMenu() {
 
         <div class="div-botones-submenu" data-button-number="3">
             <div class="div-producto">
-                <img class="img-productos" src="./milonga-item.webp" alt="milonga">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(3, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(3, 'increment')">+</button>
+                </div>
+            </div>
                 <div class="div-parrafos">
-                    <button class="sub-menu-button" data-button-number="3">Milonga</button>
-                    <p id="parrafos-detalles">Pan clásico para venta al peso y sandwicheria</p>
-                    <p id="parrafos-detalles"><b>Medida</b>: 12 - 13 cm.</p>
-                    <p id="parrafos-detalles"><b>Cantidad</b>: 11U. aprox. por Kg.</p>
-                    <p id="parrafos-detalles"><b>Presentacion</b>: Bolsa de 5 Kg.</p>
+                    
+                <button class="menu-button sub-menu-button" data-button-number="3">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
                     <div class="div-detalles">
-                        <p>$8000 <br>$1600 x Kg</p>
-                        <input class="radio-button" type="radio" name="milonga" value="8000">
-                        <button class="counter-button" onclick="updateCounter(3, 'decrement')">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-button" onclick="updateCounter(3, 'increment')">+</button>
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
                     </div>
                 </div>   
             </div>    
-                       
+
             <div class="div-boton-agregar">
                 <button class="boton-agregar" onclick="agregarAlPedido(3)">Agregar al pedido</button>
             </div>
@@ -228,25 +257,457 @@ function toggleSubMenu() {
 
         <div class="div-botones-submenu" data-button-number="4">
             <div class="div-producto">
-                <img class="img-productos" src="./flautita-item.webp" alt="flautita">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(4, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(4, 'increment')">+</button>
+                </div>
+            </div>
                 <div class="div-parrafos">
-                    <button class="sub-menu-button" data-button-number="3">Flauta</button>
-                    <p id="parrafos-detalles">Pan especial para sanwicheria</p>
-                    <p id="parrafos-detalles"><b>Medida</b>: 17 - 18 cm.</p>
-                    <p id="parrafos-detalles"><b>Cantidad</b>: 7U. aprox. por Kg.</p>
-                    <p id="parrafos-detalles"><b>Presentacion</b>: Bolsa de 5 Kg.</p>
+                    
+                <button class="menu-button sub-menu-button" data-button-number="4">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
                     <div class="div-detalles">
-                        <p>$8000 <br>$1600 x Kg</p>
-                        <input class="radio-button" type="radio" name="flauta" value="8000">
-                        <button class="counter-button" onclick="updateCounter(4, 'decrement')">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-button" onclick="updateCounter(4, 'increment')">+</button>
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
                     </div>
                 </div>   
             </div>    
-                       
+
             <div class="div-boton-agregar">
                 <button class="boton-agregar" onclick="agregarAlPedido(4)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="5">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(5, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(5, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="5">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(5)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="6">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(6, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(6, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="6">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(6)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="7">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(7, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(7, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="7">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(7)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="8">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(8, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(8, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="8">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(8)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="9">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(9, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(9, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="9">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(9)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="10">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(10, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(10, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="10">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(10)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="11">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(11, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(11, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="11">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(11)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="12">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(12, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(12, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="12">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(12)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="13">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(13, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(13, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="13">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(13)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <div class="div-botones-submenu" data-button-number="14">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(14, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(14, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="14">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(14)">Agregar al pedido</button>
+            </div>
+        </div>
+
+         <div class="div-botones-submenu" data-button-number="15">
+            <div class="div-producto">
+            <div class="div-img-prod">
+                <img class="img-productos" src="./burguer-prod.png" alt="Classic Power">
+                <div class="div-contador">
+                <button class="counter-button" onclick="updateCounter(15, 'decrement')">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-button" onclick="updateCounter(15, 'increment')">+</button>
+                </div>
+            </div>
+                <div class="div-parrafos">
+                    
+                <button class="menu-button sub-menu-button" data-button-number="15">Classic Power</button>
+                <p id="parrafos-detalles">Blen de carne + Pan de papa + Salsa BIG + Lechuga + Tomate + Cebolla + Panceta + Cheddar</p>
+
+                    <div class="div-detalles">
+
+                        <div class="div-input">
+                            <p>Simple $5700</p>
+                            <input class="radio-button" type="radio" name="Classic power simple" value="5700">
+
+                            <p>Doble <br>$7200</p>
+                            <input class="radio-button" type="radio" name="Classic power doble" value="7200">
+
+                            <p>Triple <br>$8500</p>
+                            <input class="radio-button" type="radio" name="Classic power triple" value="8500">
+                            
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>    
+
+            <div class="div-boton-agregar">
+                <button class="boton-agregar" onclick="agregarAlPedido(15)">Agregar al pedido</button>
             </div>
         </div>
         `;
@@ -266,7 +727,6 @@ function toggleSubMenu() {
 
         // Agrega la clase 'active' al botón1 cuando se despliega el submenú
         boton1.classList.add('active');
-        subMenu.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         event.preventDefault();
     } else {
         const subMenuButtons = document.querySelectorAll('.menu-button');
@@ -555,7 +1015,9 @@ function agregarAlPedido(buttonNumber) {
 
     // Mostrar el botón de hacer pedido si hay productos
     if (productos.length > 0) {
-        document.getElementById('hacerPedidoButton').style.display = 'block';
+        document.getElementById('hacerPedidoButton').style.display = 'flex';
+        document.getElementById('hacerPedidoButton').style.alignItems = 'center';
+
     }
 
     const btnTuPedido = document.getElementById("tuPedidoBtn");
@@ -602,6 +1064,9 @@ function toggleDropdown() {
     const tuPedidoBtn = document.getElementById('tuPedidoBtn');
     const pedidoDropdown = document.getElementById('pedidoDropdown');
 
+    tuPedidoBtn.style.display = "flex"
+    tuPedidoBtn.style.alignItems = "center"
+
     // Togglear la visibilidad del div al hacer clic en el botón "Tu Pedido"
     if (pedidoDropdown.style.display === 'none') {
         actualizarPedido(); // Actualizar la lista de productos en el pedido
@@ -611,18 +1076,23 @@ function toggleDropdown() {
         pedidoDropdown.style.opacity = '1';
         flecha.classList.remove('flecha-abajo');
         flecha.classList.add('flecha-arriba');
+        tuPedidoBtn.style.display = "flex"
+        tuPedidoBtn.style.alignItems = "center"
     } else {
         pedidoDropdown.style.transition = 'transform 0.8s , opacity 0.8s';
         pedidoDropdown.style.transform = 'translateY(-50px)';
         pedidoDropdown.style.opacity = '0';
         flecha.classList.remove('flecha-arriba');
         flecha.classList.add('flecha-abajo');
+        tuPedidoBtn.style.display = "flex"
+        tuPedidoBtn.style.alignItems = "center"
         // Retrasar la ocultación para permitir que la transición tenga lugar
         setTimeout(() => {
             pedidoDropdown.style.display = 'none';
         }, 800);
     }
 }
+
 function actualizarPedido() {
     const pedidoDropdown = document.getElementById('pedidoDropdown');
     const tuPedidoBtn = document.getElementById('tuPedidoBtn');
