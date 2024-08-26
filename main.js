@@ -1433,7 +1433,7 @@ function actualizarPedido() {
             const productoDiv = document.createElement('div');
             productoDiv.className = 'producto-pedido';
 
-            productoDiv.innerHTML = `${producto.producto.nombre} Cantidad: ${producto.producto.cantidad} Precio Total: $${producto.producto.precioTotal}`;
+            productoDiv.innerHTML = `${producto.producto.nombre} Cantidad: ${producto.producto.cantidad} Precio: $${producto.producto.precioTotal}`;
 
             if (producto.producto.extras && producto.producto.extras.length > 0) {
                 productoDiv.innerHTML += ' (E)';
